@@ -13,3 +13,27 @@ Add a <Suspense fallback=...> component higher in the tree to provide a loading 
 /*! For license information please see vev.js.LEGAL.txt */
 //# sourceMappingURL=vev.js.map
 
+    var watermarkDiv = document.createElement("a");
+    watermarkDiv.id = "vevwatermark";
+    watermarkDiv.href = "https://www.vev.design/?utm_source=vevsite";
+    watermarkDiv.style.cssText =
+      "position:fixed;bottom:10px;right:10px;z-index:2147483647;display:block;";
+
+    var script = document.createElement("script");
+    script.src = "https://cdn.vev.design/watermark/v1.js";
+
+    var watermarkSvg = document.createElementNS(
+      "http://www.w3.org/2000/svg",
+      "svg"
+    );
+    watermarkSvg.setAttribute("class", "vev-watermark");
+    watermarkSvg.setAttribute("viewBox", "0 0 636 168");
+    watermarkSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    watermarkSvg.setAttribute("width", "168");
+    watermarkSvg.innerHTML =
+      '<defs><style>.vev-watermark path{transition:all .3s}.vev-watermark .arrow{opacity:0;transform:translateX(40px)}.vev-watermark:hover .big-v{transition:all .3s;opacity:0;transform:translateX(-40px)}.vev-watermark:hover .sml{opacity:0}.vev-watermark:hover .arrow{opacity:1;transform:translateX(0)}</style></defs><rect fill=white height=165 rx=24.3 width=633 x=2.6 y=1.4 /><path d="M212.1 57.8h8.2l18.4 43.1L257 57.8h8v52h-6.3v-41l-17.2 41h-5.8l-17.2-41v41h-6.3Z"/><path d="M308.5 104.2v5.6H305c-5 0-6.7-2.2-6.8-5.9a14.4 14.4 0 0 1-12.7 6.3c-8.3 0-14-4.1-14-11 0-7.6 5.3-11.9 15.2-11.9H298v-2.6c0-4.9-3.5-7.8-9.4-7.8-5.4 0-9 2.5-9.7 6.4h-6c.8-7.5 6.8-11.8 16-11.8 9.6 0 15.2 4.8 15.2 13.6v16.6c0 2 .7 2.5 2.4 2.5ZM298 92.5h-11.7c-5.5 0-8.5 2-8.5 6.3 0 3.7 3.2 6.2 8.2 6.2 7.6 0 12-4.4 12-10.7Z"/><path d="M341.5 57.8h6v52h-5.2l-.8-6.1a15.3 15.3 0 0 1-13 6.5c-10.5 0-18.2-7-18.2-19.4 0-11.5 7.7-19.3 18.2-19.3 6.3 0 10.6 2.6 13 6.2Zm0 33.2c0-8.3-5-14.1-12.5-14.1s-12.5 5.7-12.5 14 5 14 12.5 14S341.5 99 341.5 91Z"/><path d="M353.4 90.8c0-11.5 7.3-19.3 18-19.3s17.7 6.7 18 18l-.1 2.6h-29.5v.5c.2 7.2 4.8 12.2 12 12.2 5.4 0 9.5-2.8 10.8-7.7h6.1a16.1 16.1 0 0 1-16.4 13.2c-11.4 0-18.9-7.9-18.9-19.5Zm29.4-3.8c-.6-6.5-5-10.2-11.3-10.2A11.2 11.2 0 0 0 360.2 87Z"/><path d="M412.8 61.6a4 4 0 1 1 4 3.9 3.8 3.8 0 0 1-4-4Zm.8 10.3h6v37.9h-6Z"/><path d="M460.8 88.7v21h-6.1V89c0-7.8-3.7-12-10.3-12-7.1 0-11.4 5.3-11.4 13.8v19h-6v-38h5.2l.8 5.2c2.2-2.9 6.1-5.6 12.5-5.6 8.5 0 15.3 4.7 15.3 17.3Z"/><path d="M482.3 57.8h6.8l16 44.3 15.8-44.3h6.7l-18.8 52H501Z"/><path d="M526 90.8c0-11.5 7.2-19.3 18-19.3s17.6 6.7 18 18l-.2 2.6h-29.5v.5c.2 7.2 4.8 12.2 12 12.2 5.4 0 9.5-2.8 10.8-7.7h6.1a16.1 16.1 0 0 1-16.4 13.2c-11.4 0-18.9-7.9-18.9-19.5Zm29.3-3.8c-.5-6.5-5-10.2-11.3-10.2A11.2 11.2 0 0 0 532.7 87Z"/><path d="M562.3 71.9h6.6l11.4 31 11.4-31h6.4l-14.2 37.9h-7.4Z"/><path d="M610.2 0H25.8A25.8 25.8 0 0 0 0 25.8v116.4A25.8 25.8 0 0 0 25.8 168h584.4a25.8 25.8 0 0 0 25.8-25.8V25.8A25.8 25.8 0 0 0 610.2 0ZM633 142.2a22.9 22.9 0 0 1-22.8 22.8h-433V3h433A22.9 22.9 0 0 1 633 25.8Z"/><path d="m127.5 52.7-15 39.7-3.5 13.4h-.6l-3.5-13.4-15-39.7h-10l23.4 62.4H114l23.5-62.4Z"class=big-v fill=white /><path d="m62 52.7-5.4 15.4-1.5 5.6H55L53.4 68 48 52.7h-6.8l9.2 25.8h9l9.3-25.8Z"class=sml fill=white /><path d="M44.9 89.4V115H65V110H51v-5.6h12.6V99H51v-4.3h13.7v-5.3Z"class=sml fill=white /><path d="m69.8 52.9 50.7-.2-.1 50.7h-9.5l.3-35-46.5 46.7-6.6-6.6L104.8 62l-35 .3Z"class=arrow fill=white />';
+
+    watermarkDiv.appendChild(watermarkSvg);
+    document.body.appendChild(watermarkDiv);
+    document.head.appendChild(script);
+  
